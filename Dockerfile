@@ -9,7 +9,7 @@ COPY requirements.txt .
 
 # Instala las dependencias del sistema
 RUN apt-get update && \
-    apt-get install -y libssl-dev g++ && \
+    apt-get install -y libssl-dev g++ libcrypto++-dev && \
     rm -rf /var/lib/apt/lists/*
 
 # Instala las dependencias de Python
